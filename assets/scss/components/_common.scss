@@ -1,0 +1,145 @@
+
+::selection {
+    color: white;
+    background: $pink;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    mix-blend-mode: difference;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-width: 10px;
+    border-style: solid;
+    right: 10px;
+    position: fixed;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    position: fixed;
+    width: 0px;
+    margin-right: 10px;
+}
+
+.noise{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    height: 100%;
+    background-image: url(/assets/images/noise.png);
+    background-position: 0 0;
+    background-size: auto;
+    opacity: .36;
+    mix-blend-mode: difference;
+    pointer-events: none;
+}
+
+.related-logo{
+    display: block;
+    width: 150px;
+    height: 56px;
+    background: url(/assets/images/Netflix_Logo.png) center / 150px auto no-repeat;
+}
+
+.inner{
+    padding: 0 48px;
+    @include mobile{
+        padding: 0 20px;
+    }
+}
+.inner2{
+    padding: 0 96px;
+    @include mobile{
+        padding: 0 20px;
+    }
+}
+
+.title{
+    font-family:'Bookk', serif;
+    font-weight: 700;
+    letter-spacing: -0.050em;
+    line-height: 125%;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.notScroll{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.mobile{
+    display: none;
+}
+/*color*/
+.col_gr{
+    color: $green;
+}
+/*theme*/
+.black{
+    background: $black;
+}
+.light{
+    background: $deepgreen;
+
+}
+
+/*btn*/
+.link-movie{
+    position: relative;
+    padding: 12px 24px;
+    border: 1px solid $black;
+    color: $black;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    pointer-events:initial;
+  }
+  .link-movie:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  .link-movie:hover {
+    color: $black;
+  }
+  .link-movie:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+
+
+/*img*/
+.parallax-img{
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+._reverse{
+    bottom: 20%;
+}
+

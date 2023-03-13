@@ -1,0 +1,61 @@
+@mixin position-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin position-vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin position-hori {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*title*/
+@mixin title-kr {
+  font-family:'Bookk', serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 125%;
+}
+
+/*반응형 화면 크기*/
+$mobile: 767px; 
+$mobile2: 420px; 
+$tablet: 1023px; 
+$desktop: 1500px;
+$desktop2: 1200px;
+
+/*반응형, 브라우저 크기가 767px 이하일때*/
+@mixin mobile{
+  @media (max-width: $mobile){
+    @content;
+  }
+}
+@mixin mobile2{
+  @media (max-width: $mobile2){
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+@mixin tablet{
+  @media (max-width: $tablet){
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+@mixin desktop{
+  @media (max-width: $desktop){
+    @content;
+  }
+}
+@mixin desktop2{
+  @media (max-width: $desktop2){
+    @content;
+  }
+}
