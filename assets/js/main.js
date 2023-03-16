@@ -8,7 +8,7 @@ ScrollTrigger.matchMedia({
        * header 사운드버튼
        */
       let myAudio = new Audio();
-      myAudio.src = "../assets/audio/audio.mp4";
+      myAudio.src = "./assets/audio/audio.mp4";
         
         $(".btn-audio").on("click", function () {
           $(this).toggleClass("playing");
@@ -150,6 +150,8 @@ ScrollTrigger.matchMedia({
      */
     function pageLoad() {
 
+      $('body').addClass('notScroll')
+
       let loadImg = gsap.timeline();
 
       loadImg
@@ -218,6 +220,9 @@ ScrollTrigger.matchMedia({
         opacity:1,
         delay: -8,
         ease: "none",
+        onComplete:function(){
+          $('body').removeClass('notScroll')
+        }
       })
 
 
