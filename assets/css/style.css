@@ -512,6 +512,11 @@ body {
   grid-column-gap: 10px;
   background-color: #2e605d;
 }
+@media (max-width: 767px) {
+  .visual .group-loader {
+    display: none;
+  }
+}
 .visual .group-loader .inner3 {
   position: fixed;
   bottom: 18%;
