@@ -149,6 +149,11 @@ body {
   height: 100vh;
   pointer-events: none;
 }
+@media (max-width: 420px) {
+  .header .group-logo {
+    text-align: center;
+  }
+}
 .header .group-logo .logo {
   position: fixed;
   bottom: 18%;
@@ -177,6 +182,7 @@ body {
 }
 @media (max-width: 420px) {
   .header .group-logo .logo {
+    font-size: 140px;
     text-align: center;
     line-height: 80%;
     transform: translate(-50%, -160%) scale(4);
@@ -645,7 +651,7 @@ body {
 }
 @media (max-width: 767px) {
   .about .group-title .headline .text {
-    font-size: 10vw;
+    font-size: 12vw;
   }
 }
 .about .group-img {
@@ -1172,7 +1178,7 @@ body {
 }
 @media (max-width: 767px) {
   .locations .title {
-    font-size: 10vw;
+    font-size: 14vw;
   }
 }
 .locations .group-gallery {
@@ -1600,8 +1606,9 @@ body {
   width: 100%;
   max-width: 130vh;
   flex-wrap: wrap;
-  grid-row-gap: 10vh;
+  grid-row-gap: 2vh;
   padding: 0 20px;
+  text-align: center;
   z-index: 100;
 }
 @media (max-width: 767px) {

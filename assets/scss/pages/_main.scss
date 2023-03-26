@@ -164,7 +164,7 @@
                     font-size: 88px;
                 }
                 @include mobile{
-                    font-size: 10vw;
+                    font-size: 12vw;
                 }
 
            }
@@ -600,7 +600,7 @@
     }
     .title{
         font-size: 200px;
-        color: #e2f5fa;
+        color: $sky;
         margin-bottom: 96px;
         font-family:$font-en;
         font-weight: 300;
@@ -611,7 +611,7 @@
             margin-bottom: 40px;
         }
         @include mobile{
-            font-size: 10vw;
+            font-size: 14vw;
         }
     }
     .group-gallery{
