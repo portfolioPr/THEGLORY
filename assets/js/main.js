@@ -98,24 +98,7 @@ ScrollTrigger.matchMedia({
 
   },
 
-	"(max-width: 799px)": function() {
-
-
-
-    //스크롤하단 영역에서 헤더 푸터 display
-    // $(window).scroll(function(){
-    //   var target = $(window).scrollTop();
-    //   if(target == $(document).height() - $(window).height()){
-    //     $(".header").fadeOut()
-    //     $(".footer").fadeIn()
-    //   }else{
-    //       $(".header").fadeIn()
-    //       $(".footer").fadeOut()
-    //   }
-    // });
-
-
-  },
+	"(max-width: 799px)": function() {},
 
 	"all": function() {
 

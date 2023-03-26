@@ -79,7 +79,7 @@ body {
   height: 100vh;
   min-height: 100%;
   font-size: 16px;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Bookk", serif;
   letter-spacing: -0.025em;
   overflow: overlay;
   background: #fff;
@@ -650,6 +650,10 @@ body {
 }
 @media (max-width: 767px) {
   .about .group-title .headline .text {
+    font-family: "Bookk", serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 125%;
     font-size: 12vw;
   }
 }
@@ -959,7 +963,7 @@ body {
 .board .group-text .img-box {
   order: -1;
 }
-.board .txt-box.serif .text {
+.board .txt-box.b .text {
   font-family: "Bookk", serif;
   font-weight: 700;
   letter-spacing: -0.025em;

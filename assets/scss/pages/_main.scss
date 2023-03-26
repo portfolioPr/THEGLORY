@@ -164,6 +164,7 @@
                     font-size: 88px;
                 }
                 @include mobile{
+                    @include title-kr;
                     font-size: 12vw;
                 }
 
@@ -434,7 +435,7 @@
         }
     }
     .txt-box{
-        &.serif{
+        &.b{
             .text{
                 @include title-kr;
                 line-height: 1.6;
