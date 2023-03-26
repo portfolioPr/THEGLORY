@@ -4,6 +4,92 @@ ScrollTrigger.matchMedia({
 
 	"(min-width: 800px)": function() {
 
+    
+
+    /**
+     * On Page Load
+     */
+    function pageLoad() {
+
+      $('body').addClass('notScroll')
+
+      let loadImg = gsap.timeline();
+
+      loadImg
+      .addLabel('a')
+      .set('.group-loader img', {
+        yPercent:-30,
+        opacity:0,
+      })
+      .set('.group-loader .loader-logo', {
+        yPercent:500,
+        opacity:0,
+      })
+      .set('.header .group-gnb', {
+        yPercent:-50,
+        opacity:0,
+      })
+
+      .to(".group-loader", {
+        opacity: 1,
+        ease: "Quint.easeOut",
+        duration: 0.5})
+
+      .to('.group-loader img', {
+        yPercent: 0,
+        opacity: 1,
+        ease: "Quint.easein",
+        stragger:0.8,
+        duration: 0.6
+      })
+
+      .fromTo(
+        ".group-loader .loader-imgs",
+        {
+          scale: 1.2
+        },
+        {
+          scale: 0.8,
+          delay: -1,
+          duration: 12
+        },'a')
+
+      .to(".group-loader .loader-logo", {
+        yPercent:0,
+        opacity:1,
+        ease: "Quint.easeOut",
+        delay: 2,
+        duration: 1
+      },'a')
+
+      .to(".group-loader", {
+        height: "0",
+        ease: "Quint.easeOut",
+        delay: -8.8,
+        duration: 1.8
+      })
+
+      .to(".group-loader .loader-logo", {
+        yPercent:3000,
+        opacity:0,
+        delay: -8.8,
+        ease: "none",
+      })
+
+      .to('.header .group-gnb', {
+        yPercent:0,
+        opacity:1,
+        delay: -8,
+        ease: "none",
+        onComplete:function(){
+          $('body').removeClass('notScroll')
+        }
+      })
+
+
+    }
+    pageLoad();
+
       /**
        * header 사운드버튼
        */
@@ -103,90 +189,6 @@ ScrollTrigger.matchMedia({
 	"all": function() {
 
 
-
-    /**
-     * On Page Load
-     */
-    function pageLoad() {
-
-      $('body').addClass('notScroll')
-
-      let loadImg = gsap.timeline();
-
-      loadImg
-      .addLabel('a')
-      .set('.group-loader img', {
-        yPercent:-30,
-        opacity:0,
-      })
-      .set('.group-loader .loader-logo', {
-        yPercent:500,
-        opacity:0,
-      })
-      .set('.header .group-gnb', {
-        yPercent:-50,
-        opacity:0,
-      })
-
-      .to(".group-loader", {
-        opacity: 1,
-        ease: "Quint.easeOut",
-        duration: 0.5})
-
-      .to('.group-loader img', {
-        yPercent: 0,
-        opacity: 1,
-        ease: "Quint.easein",
-        stragger:0.8,
-        duration: 0.6
-      })
-
-      .fromTo(
-        ".group-loader .loader-imgs",
-        {
-          scale: 1.2
-        },
-        {
-          scale: 0.8,
-          delay: -1,
-          duration: 12
-        },'a')
-
-      .to(".group-loader .loader-logo", {
-        yPercent:0,
-        opacity:1,
-        ease: "Quint.easeOut",
-        delay: 2,
-        duration: 1
-      },'a')
-
-      .to(".group-loader", {
-        height: "0",
-        ease: "Quint.easeOut",
-        delay: -8.8,
-        duration: 1.8
-      })
-
-      .to(".group-loader .loader-logo", {
-        yPercent:3000,
-        opacity:0,
-        delay: -8.8,
-        ease: "none",
-      })
-
-      .to('.header .group-gnb', {
-        yPercent:0,
-        opacity:1,
-        delay: -8,
-        ease: "none",
-        onComplete:function(){
-          $('body').removeClass('notScroll')
-        }
-      })
-
-
-    }
-    pageLoad();
 
 
     /**

@@ -60,6 +60,9 @@
         align-items: center;
         grid-column-gap: 10px;
         background-color: $deepgreen;
+        @include mobile{
+            display: none;
+        }
         .inner3{
             position: fixed;
             bottom: 18%;
