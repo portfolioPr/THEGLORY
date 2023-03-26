@@ -113,12 +113,12 @@ body {
 }
 @font-face {
   font-family: "Bookk";
-  src: url(../../fonts/Bookk_regular.ttf) format("ttf");
+  src: url(../fonts/Bookk_regular.ttf) format("ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Bookk";
-  src: url(../../fonts/Bookk_bold.ttf) format("ttf");
+  src: url(../fonts/Bookk_bold.ttf) format("ttf");
   font-weight: 700;
 }
 .header {
@@ -184,7 +184,7 @@ body {
   .header .group-logo .logo {
     text-align: center;
     line-height: 80%;
-    transform: translate(-50%, 0) scale(3.5);
+    transform: translate(-50%, 20%) scale(3.5);
   }
 }
 .header .group-gnb {
@@ -644,7 +644,6 @@ body {
 }
 @media (max-width: 767px) {
   .about .group-title .headline .text {
-    font-family: "Bookk", serif;
     font-size: 14vw;
   }
 }
@@ -1035,10 +1034,6 @@ body {
 }
 @media (max-width: 767px) {
   .question .txt-box .question {
-    font-family: "Bookk", serif;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 125%;
     font-size: 16vw;
     position: relative;
     top: auto;
@@ -1131,10 +1126,6 @@ body {
 }
 @media (max-width: 767px) {
   .story .group-text .text {
-    font-family: "Bookk", serif;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 125%;
     font-size: 18px;
   }
 }
@@ -1360,10 +1351,6 @@ body {
 }
 @media (max-width: 767px) {
   .cast .cast-role {
-    font-family: "Bookk", serif;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 125%;
     font-size: 32px;
   }
 }
@@ -1596,10 +1583,6 @@ body {
 }
 @media (max-width: 767px) {
   .direct .group-direct .txt-area .txt {
-    font-family: "Bookk", serif;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 125%;
     font-size: 32px;
   }
 }

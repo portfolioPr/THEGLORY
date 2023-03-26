@@ -160,7 +160,6 @@
                     font-size: 88px;
                 }
                 @include mobile{
-                    font-family: $font-title;
                     font-size: 14vw;
                 }
 
@@ -494,7 +493,6 @@
             font-weight: 500;
             white-space: nowrap;
             @include mobile{
-                @include title-kr;
                 font-size: 16vw;
                 position: relative;
                 top: auto;
@@ -573,7 +571,6 @@
                 font-size: 28px;
             }
             @include mobile{
-                @include title-kr;
                 font-size: 18px;
             }
         }
@@ -756,7 +753,6 @@
         font-size: 40px;
         line-height: 1;
         @include mobile{
-            @include title-kr;
             font-size: 32px;
         }
     }
@@ -947,7 +943,6 @@
                     text-align: left;
                 }
                 @include mobile{
-                    @include title-kr;
                     font-size: 32px;
                 }
             }
