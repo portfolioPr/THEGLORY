@@ -94,49 +94,25 @@ ScrollTrigger.matchMedia({
             x: "-280vw"
         });
 
-      /**
-       * 푸터 display
-       */
-      gsap.to(".header", {
-        scrollTrigger: {
-          trigger: ".introduce",
-          start: "top center",
-          end: "bottom bottom",
-          scrub: 0.5
-        },
-        y: "-20rem",
-        opacity: 0
-      });
 
-      gsap.from(".footer .related-logo, .footer .footer-logo, .footer .txt", {
-        scrollTrigger: {
-          trigger: ".introduce",
-          start: "top +=50",
-          end: "bottom bottom",
-          scrub: 0.5,
-        },
-        ease: "Quint.easeIn",
-        duration:2,
-        y: "20px",
-        opacity: 0
-      });
 
   },
 
 	"(max-width: 799px)": function() {
 
 
+
     //스크롤하단 영역에서 헤더 푸터 display
-    $(window).scroll(function(){
-      var target = $(window).scrollTop();
-      if(target == $(document).height() - $(window).height()){
-        $(".header").fadeOut()
-        $(".footer").fadeIn()
-      }else{
-          $(".header").fadeIn()
-          $(".footer").fadeOut()
-      }
-    });
+    // $(window).scroll(function(){
+    //   var target = $(window).scrollTop();
+    //   if(target == $(document).height() - $(window).height()){
+    //     $(".header").fadeOut()
+    //     $(".footer").fadeIn()
+    //   }else{
+    //       $(".header").fadeIn()
+    //       $(".footer").fadeOut()
+    //   }
+    // });
 
 
   },
@@ -315,6 +291,33 @@ ScrollTrigger.matchMedia({
     })
 
     /**
+     * 푸터 display
+     */
+        gsap.to(".header", {
+          scrollTrigger: {
+            trigger: ".introduce",
+            start: "top center",
+            end: "bottom bottom",
+            scrub: 0.5
+          },
+          y: "-20rem",
+          opacity: 0
+        });
+  
+        gsap.from(".footer .related-logo, .footer .footer-logo, .footer .txt", {
+          scrollTrigger: {
+            trigger: ".introduce",
+            start: "top +=50",
+            end: "bottom bottom",
+            scrub: 0.5,
+          },
+          ease: "Quint.easeIn",
+          duration:2,
+          y: "20px",
+          opacity: 0
+        });
+
+    /**
     * section introduce 타이틀애니메이션
     */
       txtAni = gsap.timeline({
@@ -332,6 +335,7 @@ ScrollTrigger.matchMedia({
       .from('.tit-left',{  x: "-100px"},'c')
       .from('.tit-right',{ x: "100px"},'c')
       .from('.introduce .link-movie',{ opacity: 0,  y: "20px"})
+      // .to('.footer',{ opacity: 1, yPercent:10},'c')
 
 
 

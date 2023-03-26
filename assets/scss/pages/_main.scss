@@ -507,6 +507,11 @@
                 white-space:normal;
                 line-height: 120%;
             }
+            .mobile{
+                @include mobile{
+                    display: block;
+                }
+            }
         }
     }
 
