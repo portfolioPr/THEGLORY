@@ -459,7 +459,7 @@
     padding-top: 0;
     height: 600vh;
     @include mobile{
-        height: 100vh;
+        height: 70vh;
     }
     .txt-wrap{
         position: sticky;
@@ -472,6 +472,7 @@
         @include mobile{
             position: relative;
             overflow: hidden;
+            height: 70vh;
         }
     }
     .txt-box{
@@ -496,7 +497,7 @@
             font-weight: 500;
             white-space: nowrap;
             @include mobile{
-                font-size: 10vw;
+                font-size: 16vw;
                 position: relative;
                 top: auto;
                 left: auto;
@@ -516,6 +517,9 @@
         width: 100%;
         overflow: hidden;
         height: 100vh;
+        @include mobile{
+            height: 70vh;
+        }
         img{
             position: absolute;
             left: 0;
@@ -824,7 +828,7 @@
             display: block;
             text-align: center;
             width: 100%;
-            color: $pink;
+            color: $green;
             font-size: 40px;
             line-height: 1;
             font-weight: 500;
@@ -923,7 +927,7 @@
                 font-size: 20px;
                 margin-bottom: 10px;
                 text-transform: uppercase;
-                color: $pink;
+                color: $green;
                 @include desktop2{
                     font-size: 16px;
                     margin-bottom: 0;
