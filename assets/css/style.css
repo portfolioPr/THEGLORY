@@ -510,7 +510,7 @@ body {
   height: 100%;
   align-items: center;
   grid-column-gap: 10px;
-  background-color: #181818;
+  background: #000;
 }
 @media (max-width: 767px) {
   .visual .group-loader {

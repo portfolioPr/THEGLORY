@@ -59,7 +59,7 @@
         height: 100%;
         align-items: center;
         grid-column-gap: 10px;
-        background-color: $black;
+        background: #000;
         @include mobile{
             display: none;
         }
