@@ -961,8 +961,9 @@
         width: 100%;
         max-width: 130vh;
         flex-wrap: wrap;
-        grid-row-gap: 10vh;
+        grid-row-gap: 2vh;
         padding: 0 20px;
+        text-align: center;
         z-index: 100;
         @include mobile{
             grid-row-gap: 5px;
