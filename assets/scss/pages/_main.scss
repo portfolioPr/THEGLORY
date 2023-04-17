@@ -973,13 +973,13 @@
             grid-row-gap: 5px;
         }
         h2{
-            font-size: 180px;
+            font-size: 140px;
             opacity: 0;
             font-family: $font-en;
             font-weight: 500;
             line-height: 1;
             @include desktop{
-                font-size: clamp(70px, 13vw, 160px);
+                font-size: clamp(70px, 13vw, 140px);
             }
             @include mobile{
                 text-align: center;
